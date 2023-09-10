@@ -1,0 +1,54 @@
+.card {
+  border-radius: 15px;
+  // padding: 1em;
+  background-color: $dark-blue;
+
+  &-orange {
+    background-color: $work-red;
+    padding: 1em;
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+  }
+
+  &-yellow {
+    background-color: $self-care-orange;
+    padding: 1em;
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+  }
+
+  &-violet {
+    background-color: $social-violet;
+    padding: 1em;
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+  }
+
+  &-red {
+    background-color: $study-red;
+    padding: 1em;
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+  }
+
+  &-green {
+    background-color: $exercise-green;
+    padding: 1em;
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+  }
+
+  &-blue {
+    background-color: $play-blue;
+    padding: 1em;
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+  }
+
+  &-prim-blue {
+    background-color: $primary-blue;
+    padding: 1em;
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+  }
+}

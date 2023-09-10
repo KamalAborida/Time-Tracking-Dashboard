@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Rubik", sans-serif;
+}
+
+.card {
+  border-radius: 15px;
+  background-color: hsl(235, 46%, 20%);
+}
+.card-orange {
+  background-color: hsl(15, 100%, 70%);
+  padding: 1em;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+}
+.card-yellow {
+  background-color: hsl(43, 84%, 65%);
+  padding: 1em;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+}
+.card-violet {
+  background-color: hsl(264, 64%, 52%);
+  padding: 1em;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+}
+.card-red {
+  background-color: hsl(348, 100%, 68%);
+  padding: 1em;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+}
+.card-green {
+  background-color: hsl(145, 58%, 55%);
+  padding: 1em;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+}
+.card-blue {
+  background-color: hsl(195, 74%, 62%);
+  padding: 1em;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+}
+.card-prim-blue {
+  background-color: hsl(246, 80%, 60%);
+  padding: 1em;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+}
+
+.tasks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 2em;
+  width: 75%;
+  grid-column-gap: 2em;
+  grid-row-gap: 4em;
+  position: relative;
+  height: 98%;
+}
+
+.task {
+  position: relative;
+}
+.task-content {
+  padding: 1em 2em;
+  z-index: 99;
+  color: white;
+}
+.task-content__titleDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.task-content__cHours {
+  font-size: 3rem;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+}
+.task-content__pHours {
+  color: hsl(236, 100%, 87%);
+  font-size: 0.9rem;
+}
+.task-body {
+  height: 50%;
+  z-index: -1;
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  overflow: hidden;
+}
+.task-body__icon {
+  position: absolute;
+  right: 20px;
+  width: 30%;
+  top: -10px;
+}
+
+@media screen and (max-width: 800px) {
+  .tasks {
+    display: unset;
+    padding-top: 2em;
+    width: 95%;
+    position: static;
+    height: unset;
+    margin: 20px auto;
+  }
+  .task {
+    position: relative;
+    margin-bottom: 80px;
+  }
+  .task-content {
+    padding: 1em 2em;
+    z-index: 99;
+    color: white;
+  }
+  .task-content__titleDiv {
+    margin: 5px 0;
+  }
+  .task-content__hoursDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .task-content__cHours {
+    font-size: 2.5rem;
+  }
+  .task-body {
+    top: -40px;
+  }
+}
+.user {
+  width: 22%;
+  height: 100%;
+}
+.user-info {
+  height: 70%;
+  background-color: hsl(246, 80%, 60%);
+  padding: 2em;
+  color: white;
+}
+.user-info__avatar {
+  width: 40%;
+  border: 3px solid white;
+  margin-bottom: 35px;
+}
+.user-info__nameDiv p {
+  font-size: 0.7rem;
+  color: hsl(236, 100%, 87%);
+}
+.user__timeZones {
+  margin: 30px 0;
+  padding: 0 2em;
+  color: hsl(235, 45%, 61%);
+  font-size: 0.9rem;
+}
+.user__timeZones p {
+  margin-bottom: 10px;
+  width: -moz-min-content;
+  width: min-content;
+}
+.user__timeZones p:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.avatar {
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .user {
+    width: 95%;
+    height: unset;
+    margin: 30px auto;
+  }
+  .user-info {
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .user-info__avatar {
+    width: 25%;
+    margin-bottom: unset;
+  }
+  .user-info__nameDiv {
+    width: 70%;
+  }
+  .user-info__nameDiv__name {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .user__timeZones {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 0 3em;
+    font-size: 1rem;
+  }
+}
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(226, 43%, 10%);
+}
+
+.container {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    height: unset;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: unset;
+    position: unset;
+    transform: unset;
+    margin: 20px auto;
+  }
+}

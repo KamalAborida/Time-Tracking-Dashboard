@@ -1,0 +1,56 @@
+// Box sizing border-box for all elements
+* {
+  box-sizing: border-box;
+}
+
+// Remove margin and padding on all elements
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+// Remove list styles (bullet points and numbers)
+ul, ol {
+  list-style: none;
+}
+
+// Remove underlines from links
+a {
+  text-decoration: none;
+}
+
+// Reset some default styles for form elements
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+// Set the base font size and line-height
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: $body-font-family; // You can change the font-family as needed
+}
+
+// Optionally, you can add more resets or custom styles based on your project's requirements.

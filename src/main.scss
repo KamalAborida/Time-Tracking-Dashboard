@@ -1,0 +1,38 @@
+@import './Style/variables';
+@import './Style/reset';
+@import './Style/card';
+@import './Style/task';
+@import './Style/user';
+
+body {
+  font-family: $body-font-family;
+  background-color: $very-dark-blue;
+}
+
+.container {
+  width: 70%;
+  // margin: 100px auto;
+  // padding: 0.5em;
+  // border: 2px solid black;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: $mobile-width) {
+  .container {
+    width: 100%;
+    height: unset;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: unset;
+    position: unset;
+    transform: unset;
+    margin: 20px auto;
+  }
+}

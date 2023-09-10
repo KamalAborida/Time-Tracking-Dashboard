@@ -1,0 +1,87 @@
+.user {
+  // border: 2px solid red;
+  width: 22%;
+  height: 100%;
+
+  &-info {
+    // border: 2px solid red;
+    height: 70%;
+    background-color: $primary-blue;
+    padding: 2em;
+    color: white;
+
+    &__avatar {
+      width: 40%;
+      border: 3px solid white;
+      margin-bottom: 35px;
+    }
+
+    &__nameDiv {
+      &__name {
+        font-weight: map-get($font-weights, "1");
+      }
+
+      p {
+        font-size: 0.7rem;
+        color: $pale-blue;
+      }
+    }
+  }
+
+  &__timeZones {
+    margin: 30px 0;
+    padding: 0 2em;
+    color: $desaturated-blue;
+    font-size: 0.9rem;
+
+    p {
+      margin-bottom: 10px;
+      width: min-content;
+
+      &:hover {
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+}
+
+.avatar {
+  border-radius: 100%;
+}
+
+@media screen and (max-width: $mobile-width) {
+  .user {
+    width: 95%;
+    height: unset;
+    margin: 30px auto;
+
+    &-info {
+      height: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__avatar {
+        width: 25%;
+        margin-bottom: unset;
+      }
+
+      &__nameDiv {
+        width: 70%;
+        &__name {
+          width: 100%;
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    &__timeZones {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0;
+      padding: 0 3em;
+      font-size: 1rem;
+    }
+  }
+}
